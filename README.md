@@ -30,15 +30,13 @@ Font Awesome: Iconos para redes sociales y otros elementos.
 Instalación y Uso
 Este es un proyecto estático. No necesitas un servidor web para ejecutarlo. Simplemente clona el repositorio y abre el archivo index.html en tu navegador web preferido.
 
-git clone [https://github.com/tu-usuario/lacrimas-nocturnas-landing-page.git](https://github.com/tu-usuario/lacrimas-nocturnas-landing-page.git)
+git clone https://github.com/santiagourdaneta/lacrimas-nocturnas-landing-page
 cd lacrimas-nocturnas-landing-page
 
 Abre index.html en tu navegador para ver la página en acción.
 
 Créditos
 Concepto de Banda: Lacrimas Nocturnas (Banda ficticia)
-
-Diseño y Desarrollo: [Tu Nombre o Usuario de GitHub]
 
 Licencia
 Este proyecto está bajo la licencia MIT.
