@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacrimas Nocturnas - Gothic Black Metal</title>
+    
+    <!-- Meta etiquetas para SEO y Open Graph -->
+    <meta name="description" content="Página oficial de Lacrimas Nocturnas. Explora nuestra música, fechas de gira y merchandising.">
+    <meta property="og:title" content="Lacrimas Nocturnas - Gothic Black Metal">
+    <meta property="og:description" content="El Velo de la Noche Eterna. Música, giras y merch de la banda de gothic black metal.">
+    <meta property="og:image" content="https://placehold.co/1200x630/000000/B81E1E/png?text=Lacrimas+Nocturnas+Open+Graph">
+    <meta property="og:url" content="https://www.tu-banda.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lacrimas Nocturnas - El Velo de la Noche Eterna">
+    <meta name="twitter:description" content="Música, giras y merch de la banda de gothic black metal.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/000000/B81E1E/png?text=Lacrimas+Nocturnas+Twitter+Card">
+    
+    <!-- Bulma CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Fuente para un estilo gótico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales y variables */
+        :root {
+            --color-principal: #0a0a0a;
+            --color-secundario: #1c0000;
+            --color-acento: #8b0000; /* Rojo sangre oscuro */
+            --color-texto-claro: #f0f0f0;
+            --color-texto-acento: #b81e1e;
+        }
+
+        html, body {
+            background-color: var(--color-principal);
+            color: var(--color-texto-claro);
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+     
+        /* Títulos con fuente gótica */
+        .title, .subtitle, .is-size-1, .is-size-2 {
+            font-family: 'Metal Mania', cursive;
+        }
+
+        .title {
+            color: var(--color-texto-acento);
+            text-shadow: 2px 2px 4px var(--color-secundario);
+        }
+
+        .subtitle {
+            color: var(--color-texto-claro);
+            text-shadow: 1px 1px 2px var(--color-secundario);
+        }
+
+        /* Navbar personalizada */
+        .navbar {
+            background-color: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid var(--color-acento);
+        }
+
+        .navbar-item, .navbar-link {
+            color: var(--color-texto-claro) !important;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .navbar-item:hover, .navbar-link:hover {
+            color: var(--color-acento) !important;
+        }
+
+        /* Contenedores de sección */
+        section {
+            padding: 5rem 1.5rem;
+        }
+
+        .box {
+            background-color: var(--color-secundario);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--color-acento);
+        }
+
+        /* Estilos de botones */
+        .button.is-primary {
+            background-color: var(--color-acento);
+            border-color: var(--color-acento);
+            color: var(--color-texto-claro);
+            transition: all 0.3s ease;
+        }
+
+        .button.is-primary:hover {
+            background-color: var(--color-texto-acento);
+            border-color: var(--color-texto-acento);
+            transform: scale(1.05);
+        }
+
+        /* Estilos de tabla para fechas */
+        .table.is-hoverable tbody tr:hover {
+            background-color: var(--color-acento);
+            color: var(--color-texto-claro);
+        }
+        .table.is-hoverable tbody tr:hover a {
+            color: var(--color-texto-claro);
+        }
+
+        .table thead th {
+            color: var(--color-acento);
+        }
+
+        /* Efecto de borde para imágenes */
+        .band-image {
+            border: 2px solid var(--color-acento);
+            box-shadow: 0 0 15px var(--color-acento);
+        }
+        
+        /* Input y textarea */
+        .input, .textarea {
+            background-color: var(--color-principal);
+            color: var(--color-texto-claro);
+            border: 1px solid var(--color-acento);
+        }
+        .input:focus, .textarea:focus {
+            border-color: var(--color-texto-acento);
+            box-shadow: 0 0 0 0.125em var(--color-texto-acento);
+        }
+
+        /* Pie de página con estilo */
+        .footer {
+            background-color: var(--color-secundario);
+            border-top: 2px solid var(--color-acento);
+            padding: 2rem 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero is-fullheight hero-banner">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-4 has-text-weight-bold" href="#">
+                        Lacrimas Nocturnas
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#about">Acerca</a>
+                        <a class="navbar-item" href="#music">Música</a>
+                        <a class="navbar-item" href="#tour">Gira</a>
+                        <a class="navbar-item" href="#contact">Contacto</a>
+                        <a class="navbar-item" href="#merch">Merch</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="has-text-centered">
+            <div>
+                <p class="title is-1">Lacrimas Nocturnas</p>
+                <p class="subtitle is-4">El Velo de la Noche Eterna</p>
+                <a href="#music" class="button is-primary is-large is-rounded mt-5">Escuchar Ahora</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container has-text-centered">
+            <div class="box">
+                <h2 class="title is-2">Acerca de la Banda</h2>
+                <p class="is-size-5">
+                    Forjados en los salones de la desolación de Europa del Este, Lacrimas Nocturnas canaliza la esencia melancólica del black metal sinfónico con la teatralidad y seducción del gothic metal. Sus letras, escritas en un lenguaje ceremonial, narran historias de vampirismo, muerte, y el romance eterno en la oscuridad. Con su música, buscan invocar una atmósfera de decadencia sublime, un tributo al crepúsculo final.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section class="section" id="music">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Discografía</h2>
+            <div class="columns is-multiline is-centered">
+                <!-- Álbum 1 -->
+                <div class="column is-one-third">
+                    <div class="card has-background-dark has-text-white">
+                        <div class="card-image has-text-centered">
+                            <figure class="image is-4by3 band-image" aria-label="Portada del álbum El Crepúsculo Eterno">
+                                <img src="https://placehold.co/400x300/1c0000/b81e1e?text=El+Crepúsculo+Eterno" alt="El Crepúsculo Eterno">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-white">El Crepúsculo Eterno</p>
+                            <p class="subtitle is-6 has-text-grey-light">2025</p>
+                            <a href="#" class="button is-primary is-fullwidth mt-3">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Álbum 2 -->
+                <div class="column is-one-third">
+                    <div class="card has-background-dark has-text-white">
+                        <div class="card-image has-text-centered">
+                            <figure class="image is-4by3 band-image" aria-label="Portada del álbum Rituales Vampíricos">
+                                <img src="https://placehold.co/400x300/1c0000/b81e1e?text=Rituales+Vampíricos" alt="Rituales Vampíricos">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-white">Rituales Vampíricos</p>
+                            <p class="subtitle is-6 has-text-grey-light">2024</p>
+                            <a href="#" class="button is-primary is-fullwidth mt-3">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Álbum 3 -->
+                <div class="column is-one-third">
+                    <div class="card has-background-dark has-text-white">
+                        <div class="card-image has-text-centered">
+                            <figure class="image is-4by3 band-image" aria-label="Portada del álbum Catedral de Cenizas">
+                                <img src="https://placehold.co/400x300/1c0000/b81e1e?text=Catedral+de+Cenizas" alt="Catedral de Cenizas">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-white">Catedral de Cenizas</p>
+                            <p class="subtitle is-6 has-text-grey-light">2023</p>
+                            <a href="#" class="button is-primary is-fullwidth mt-3">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Section -->
+    <section class="section" id="tour">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-2 has-text-centered mb-6">Gira 2025</h2>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input is-dark is-rounded" type="text" id="tourSearch" placeholder="Buscar por ciudad o lugar...">
+                        <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
+                    </p>
+                </div>
+                <div class="table-container">
+                    <table class="table is-striped is-hoverable is-fullwidth is-dark">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Ciudad</th>
+                                <th>Lugar</th>
+                                <th>Entradas</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tourTableBody">
+                            <!-- Los datos de la gira se insertarán aquí con JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                    <ul class="pagination-list" id="paginationList">
+                        <!-- Los botones de paginación se insertarán aquí con JavaScript -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-2 has-text-centered mb-6">Contacto</h2>
+                <form id="contactForm">
+                    <div class="field">
+                        <label class="label has-text-white" for="name">Nombre</label>
+                        <div class="control">
+                            <input class="input" type="text" id="name" name="name" maxlength="50" required aria-label="Tu nombre">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-white" for="email">Correo Electrónico</label>
+                        <div class="control">
+                            <input class="input" type="email" id="email" name="email" required aria-label="Tu correo electrónico">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-white" for="message">Mensaje</label>
+                        <div class="control">
+                            <textarea class="textarea" id="message" name="message" rows="5" maxlength="500" required aria-label="Tu mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="control">
+                            <button class="button is-primary is-large is-rounded" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                    <p id="formStatus" class="has-text-centered mt-4"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merch Section -->
+    <section class="section" id="merch">
+        <div class="container">
+            <div class="box has-text-centered">
+                <h2 class="title is-2">Merchandising</h2>
+                <p class="is-size-5">
+                    Pronto disponibles camisetas, vinilos y más en nuestra tienda oficial.
+                </p>
+                <a href="#" class="button is-primary is-large is-rounded mt-5">Ver Colección</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Lacrimas Nocturnas</strong> | Contacto y Redes Sociales
+            </p>
+            <p>
+                <a href="https://facebook.com" class="has-text-grey-light mx-2" aria-label="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://twitter.com" class="has-text-grey-light mx-2" aria-label="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://instagram.com" class="has-text-grey-light mx-2" aria-label="Instagram"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Datos de ejemplo para la gira
+        const tourDates = [
+            { date: 'Octubre 31', city: 'Londres, UK', venue: 'Underworld', tickets: '#' },
+            { date: 'Noviembre 5', city: 'París, FR', venue: 'La Machine du Moulin Rouge', tickets: '#' },
+            { date: 'Noviembre 12', city: 'Berlín, DE', venue: 'Quasimodo', tickets: '#' },
+            { date: 'Noviembre 20', city: 'Roma, IT', venue: 'Traffic Live', tickets: '#' },
+            { date: 'Noviembre 28', city: 'Madrid, ES', venue: 'Sala Nazca', tickets: '#' },
+            { date: 'Diciembre 3', city: 'Lisboa, PT', venue: 'RCA Club', tickets: '#' },
+            { date: 'Diciembre 10', city: 'Ciudad de México, MX', venue: 'Circo Volador', tickets: '#' },
+            { date: 'Diciembre 15', city: 'Bogotá, CO', venue: 'Ace of Spades Club', tickets: '#' },
+            { date: 'Diciembre 20', city: 'Santiago, CL', venue: 'Teatro Cariola', tickets: '#' },
+            { date: 'Enero 8', city: 'Tokio, JP', venue: 'Shibuya O-East', tickets: '#' },
+            { date: 'Enero 15', city: 'Sídney, AU', venue: 'Factory Theatre', tickets: '#' },
+            { date: 'Enero 22', city: 'Sao Paulo, BR', venue: 'Carioca Club', tickets: '#' },
+        ];
+        
+        const itemsPerPage = 5;
+        let currentPage = 1;
+        
+        // Elementos del DOM
+        const tourTableBody = document.getElementById('tourTableBody');
+        const paginationList = document.getElementById('paginationList');
+        const tourSearchInput = document.getElementById('tourSearch');
+
+        // Función para renderizar la tabla de la gira
+        const renderTourTable = (data) => {
+            tourTableBody.innerHTML = ''; // Limpiar la tabla
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedData = data.slice(start, end);
+
+            paginatedData.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.date}</td>
+                    <td>${item.city}</td>
+                    <td>${item.venue}</td>
+                    <td><a href="${item.tickets}" class="button is-primary is-small" aria-label="Comprar entradas para ${item.venue}">Comprar</a></td>
+                `;
+                tourTableBody.appendChild(row);
+            });
+        };
+
+        // Función para renderizar la paginación
+        const renderPagination = (data) => {
+            paginationList.innerHTML = '';
+            const totalPages = Math.ceil(data.length / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement('li');
+                const link = document.createElement('a');
+                link.classList.add('pagination-link');
+                if (i === currentPage) {
+                    link.classList.add('is-current');
+                }
+                link.setAttribute('aria-label', `Ir a la página ${i}`);
+                link.textContent = i;
+                link.addEventListener('click', () => {
+                    currentPage = i;
+                    renderTourTable(data);
+                    renderPagination(data);
+                });
+                li.appendChild(link);
+                paginationList.appendChild(li);
+            }
+        };
+
+        // Función de búsqueda en tiempo real
+        const handleSearch = () => {
+            const query = tourSearchInput.value.toLowerCase();
+            const filteredDates = tourDates.filter(date => {
+                return date.city.toLowerCase().includes(query) || date.venue.toLowerCase().includes(query);
+            });
+            currentPage = 1;
+            renderTourTable(filteredDates);
+            renderPagination(filteredDates);
+        };
+        tourSearchInput.addEventListener('keyup', handleSearch);
+
+        // Inicializar la tabla y la paginación al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTourTable(tourDates);
+            renderPagination(tourDates);
+
+            // JavaScript para el menú hamburguesa
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+
+            // JavaScript para el scroll suave a las secciones
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Manejo del formulario de contacto
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                formStatus.textContent = 'Mensaje enviado. ¡Gracias por contactarnos!';
+                formStatus.style.color = var(--color-acento);
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
+
